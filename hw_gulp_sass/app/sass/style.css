@@ -368,6 +368,6 @@ footer {
     flex: 0 0 40%; }
 
   .footerMain .address {
-    order: 3; } }
+    order: +1; } }
 
 /*# sourceMappingURL=style.css.map */
