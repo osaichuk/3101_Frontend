@@ -4,11 +4,12 @@ body {
   max-width: 1130px;
   display: flex;
   flex-direction: column;
-  font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial;
+  font-family: Helvetica Neue, Helvetica, Arial;
   box-sizing: border-box; }
 
 h3 {
-  color: #ec6a0b; }
+  color: #ec6a0b;
+  margin-left: 20px; }
 
 a {
   text-decoration: none;
@@ -227,7 +228,7 @@ section {
   margin-top: -60px; }
 
 .item {
-  width: 200px;
+  max-width: 200px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -316,9 +317,12 @@ footer {
       margin: 5px 20px;
       text-align: center; }
   .footerMain .logo {
-    flex: 0 1 25%;
+    flex: 0 0 25%;
     margin-top: 20px;
     text-align: center; }
+    .footerMain .logo img {
+      width: 100%;
+      max-width: 200px; }
 
 .footerBlackLine {
   background-color: black;
@@ -332,7 +336,17 @@ footer {
   .middleOff {
     display: none; }
   .headerContacts .address .phone {
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .headerNav {
+    justify-content: flex-end; }
+  .button.visibleOn,
+  .description.visibleOn {
+    visibility: visible; }
+  .inEnglish,
+  .soon,
+  .bestsellers,
+  .anotherSeen {
+    margin-top: -10px; } }
 
 @media all and (max-width: 768px) {
   .sectionContent {
@@ -342,23 +356,39 @@ footer {
   .headerContacts .address,
   .headerContacts .status .authorization {
     display: none; }
+  .headerContacts .status {
+    flex: 0 0 30%; }
   .headerContacts .status .basket .product .fa-shopping-cart {
     font-size: x-large;
     color: #8C796F;
-    margin-left: 200px;
+    margin-left: 20px;
     margin-top: 20px; }
   .headerContacts {
     background-color: #f1e4d3;
     margin: 0; }
     .headerContacts .logo {
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      flex: 0 0 40%; }
       .headerContacts .logo img {
         max-width: 200px; }
   .headerSearch input {
-    width: 75%; }
+    width: 65%; }
   .item-double {
     min-width: 100%; }
+  .item {
+    max-width: 178px; }
+  .button.visibleOn,
+  .description.visibleOn {
+    visibility: visible; }
+  .inEnglish,
+  .soon,
+  .bestsellers,
+  .anotherSeen {
+    margin-top: -10px; }
   .footerMain .nav {
     flex: 0 0 40%; }
   .footerMain .address {
-    order: +1; } }
+    order: +1; }
+  .footerMain .logo,
+  .footerMain .nav {
+    flex: 0 0 40%; } }
