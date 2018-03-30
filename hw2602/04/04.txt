@@ -1,8 +1,16 @@
-Ошибка
-1
 
-22 
-22
+var a = 1, b = 1, c, d;
 
-2 
-3 
+c = ++x; // Ошибка
+alert(c); // Undefined
+
+d = b++;
+alert(d); // 1
+
+c = (2+ ++a);
+alert(c); //22 
+d = (2+ b++);
+alert(d); //22
+
+alert(a); //2 
+alert(b); //3 
